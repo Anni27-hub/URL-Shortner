@@ -12,7 +12,7 @@ const userRoute = require('./routes/user')
 const app = express();
 const PORT = 8001;
 
-connectToMongoDB('mongodb+srv://Anish:URL@url.8me6ihe.mongodb.net/?appName=URL')
+connectToMongoDB('mongodb://127.0.0.1:27017/short-url')
 .then (()=> console.log("MongoDB connected"))
 
 app.set("view engine" , "ejs")
